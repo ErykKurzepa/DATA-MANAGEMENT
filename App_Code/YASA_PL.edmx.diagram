@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0493e9d9e36b48549f4b5b51970dea00" Name="Diagram1" ZoomLevel="15" >
+        <EntityTypeShape EntityType="YASA_PL.User" Width="2.125" PointX="0.875" PointY="1" />
+        <EntityTypeShape EntityType="YASA_PL.Customer" Width="1.875" PointX="31.5" PointY="11" />
+        <EntityTypeShape EntityType="YASA_PL.Customer_Contact" Width="1.75" PointX="34.125" PointY="10.875" />
+        <EntityTypeShape EntityType="YASA_PL.Customer_Order" Width="2" PointX="28.75" PointY="8.625" />
+        <EntityTypeShape EntityType="YASA_PL.Technology_Index" Width="2.75" PointX="12.5" PointY="22.75" />
+        <EntityTypeShape EntityType="YASA_PL.Technology_Stage" Width="2.875" PointX="8.875" PointY="22.75" />
+        <EntityTypeShape EntityType="YASA_PL.Technology_Dwg" Width="1.875" PointX="14.625" PointY="37.375" />
+        <EntityTypeShape EntityType="YASA_PL.CNC_Program_Index" Width="2.125" PointX="28.5" PointY="41.5" />
+        <EntityTypeShape EntityType="YASA_PL.CNC_Machine" Width="2" PointX="25" PointY="37.25" />
+        <EntityTypeShape EntityType="YASA_PL.Fixture" Width="2.5" PointX="11.25" PointY="0.875" />
+        <EntityTypeShape EntityType="YASA_PL.Production_Order" Width="1.875" PointX="25.625" PointY="8.75" />
+        <EntityTypeShape EntityType="YASA_PL.Customer_Product" Width="1.75" PointX="28.875" PointY="11.625" />
+        <EntityTypeShape EntityType="YASA_PL.Customer_Part" Width="2.125" PointX="25.75" PointY="11.25" />
+        <EntityTypeShape EntityType="YASA_PL.Notification" Width="2.125" PointX="24.125" PointY="4" />
+        <EntityTypeShape EntityType="YASA_PL.CNC_Subprogram_Index" Width="2" PointX="32.375" PointY="40.625" />
+        <EntityTypeShape EntityType="YASA_PL.Country" Width="1.5" PointX="33.125" PointY="16.125" />
+        <EntityTypeShape EntityType="YASA_PL.Department" PointX="3.875" PointY="1" Width="1.5" />
+        <AssociationConnector Association="YASA_PL.CustomerCustomer_Contact" />
+        <AssociationConnector Association="YASA_PL.CustomerCustomer_Product" />
+        <AssociationConnector Association="YASA_PL.CustomerCustomer_Part" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="YASA_PL.CountryCustomer" />
+        <AssociationConnector Association="YASA_PL.Customer_OrderProduction_Order" />
+        <EntityTypeShape EntityType="YASA_PL.Position" PointX="3.75" PointY="2.875" Width="1.5" />
+        <AssociationConnector Association="YASA_PL.UserPosition" />
+        <AssociationConnector Association="YASA_PL.DepartmentUser" />
+        <AssociationConnector Association="YASA_PL.UserNotification" />
+        <AssociationConnector Association="YASA_PL.Customer_PartNotification" />
+        <AssociationConnector Association="YASA_PL.Customer_ProductNotification" ManuallyRouted="false" >
+        </AssociationConnector>
+        <EntityTypeShape EntityType="YASA_PL.Customer_Product_Index" Width="2" PointX="28.875" PointY="16.25" />
+        <AssociationConnector Association="YASA_PL.Customer_IndexCustomer_Product" />
+        <EntityTypeShape EntityType="YASA_PL.Customer_Part_Index" Width="2" PointX="25.875" PointY="15.75" />
+        <AssociationConnector Association="YASA_PL.Customer_Part_IndexCustomer_Part" />
+        <EntityTypeShape EntityType="YASA_PL.Customer_Files" Width="2" PointX="31.875" PointY="19.625" />
+        <AssociationConnector Association="YASA_PL.Customer_FilesCustomer_Part_Index" />
+        <AssociationConnector Association="YASA_PL.Customer_FilesCustomer_Product_Index" />
+        <AssociationConnector Association="YASA_PL.Customer_FilesCustomer_Order" />
+        <EntityTypeShape EntityType="YASA_PL.Quality_Instruction" Width="2.125" PointX="36.5" PointY="33.125" />
+        <EntityTypeShape EntityType="YASA_PL.Contractor" Width="1.875" PointX="31.5" PointY="5.75" />
+        <EntityTypeShape EntityType="YASA_PL.Contractor_Contact" Width="2.25" PointX="34.125" PointY="5.75" />
+        <EntityTypeShape EntityType="YASA_PL.Contractor_Order" Width="2.25" PointX="39.625" PointY="5.75" />
+        <AssociationConnector Association="YASA_PL.ContractorContractor_Contact" />
+        <AssociationConnector Association="YASA_PL.ContractorContractor_Order" />
+        <EntityTypeShape EntityType="YASA_PL.Score" Width="2" PointX="43.125" PointY="5.75" />
+        <EntityTypeShape EntityType="YASA_PL.Contractor_category" Width="2.125" PointX="31.5" PointY="3.5" />
+        <AssociationConnector Association="YASA_PL.ContractorContractor_category" />
+        <EntityTypeShape EntityType="YASA_PL.Technology_Changes" Width="1.875" PointX="24" PointY="20.875" />
+        <AssociationConnector Association="YASA_PL.ContractorCountry" />
+        <EntityTypeShape EntityType="YASA_PL.Comment" Width="2.25" PointX="37.25" PointY="15" />
+        <AssociationConnector Association="YASA_PL.CustomerUser" />
+        <AssociationConnector Association="YASA_PL.Customer_ContactUser" />
+        <AssociationConnector Association="YASA_PL.CommentUser" />
+        <AssociationConnector Association="YASA_PL.CommentCustomer" />
+        <AssociationConnector Association="YASA_PL.CommentCustomer_Contact" />
+        <AssociationConnector Association="YASA_PL.CommentContractor" />
+        <AssociationConnector Association="YASA_PL.CommentContractor_Contact" />
+        <AssociationConnector Association="YASA_PL.CommentContractor_Order" />
+        <AssociationConnector Association="YASA_PL.CommentCustomer_Order" />
+        <AssociationConnector Association="YASA_PL.Contractor_OrderUser" />
+        <AssociationConnector Association="YASA_PL.Contractor_ContactUser" />
+        <AssociationConnector Association="YASA_PL.ContractorUser" />
+        <AssociationConnector Association="YASA_PL.ScoreUser" />
+        <AssociationConnector Association="YASA_PL.Customer_ProductUser" />
+        <AssociationConnector Association="YASA_PL.Customer_PartUser" />
+        <AssociationConnector Association="YASA_PL.Customer_Part_IndexUser" />
+        <AssociationConnector Association="YASA_PL.Customer_Product_IndexUser" />
+        <AssociationConnector Association="YASA_PL.Customer_FilesUser" />
+        <AssociationConnector Association="YASA_PL.Customer_PartCustomer_Contact" />
+        <AssociationConnector Association="YASA_PL.Customer_PartCustomer_Contact1" />
+        <AssociationConnector Association="YASA_PL.Customer_PartCustomer_Contact2" />
+        <AssociationConnector Association="YASA_PL.Customer_ProductCustomer_Contact" />
+        <AssociationConnector Association="YASA_PL.Customer_ProductCustomer_Contact1" />
+        <AssociationConnector Association="YASA_PL.Customer_ProductCustomer_Contact2" />
+        <AssociationConnector Association="YASA_PL.Customer_ProductComment" />
+        <AssociationConnector Association="YASA_PL.Customer_PartComment" />
+        <AssociationConnector Association="YASA_PL.Customer_Part_IndexComment" />
+        <AssociationConnector Association="YASA_PL.Customer_Product_IndexComment" />
+        <AssociationConnector Association="YASA_PL.Customer_FilesComment" />
+        <AssociationConnector Association="YASA_PL.Customer_Part_IndexCustomer_Product_Index" />
+        <AssociationConnector Association="YASA_PL.TechnologyUser" />
+        <AssociationConnector Association="YASA_PL.TechnologyUser1" />
+        <AssociationConnector Association="YASA_PL.Technology_StageUser" />
+        <EntityTypeShape EntityType="YASA_PL.Technology_Dwg_Index" Width="2.125" PointX="11.875" PointY="37.375" />
+        <EntityTypeShape EntityType="YASA_PL.Quality_Instruction_Index" Width="2.375" PointX="39.625" PointY="33.125" />
+        <AssociationConnector Association="YASA_PL.Technology_DwgTechnology_Dwg_Index" />
+        <AssociationConnector Association="YASA_PL.Technology_DwgUser" />
+        <AssociationConnector Association="YASA_PL.Quality_InstructionUser" />
+        <AssociationConnector Association="YASA_PL.Quality_Instruction_IndexUser" />
+        <AssociationConnector Association="YASA_PL.Technology_Dwg_IndexUser" />
+        <AssociationConnector Association="YASA_PL.Technology_Dwg_IndexUser1" />
+        <AssociationConnector Association="YASA_PL.Quality_Instruction_IndexUser1" />
+        <AssociationConnector Association="YASA_PL.CNC_ProgramUser" />
+        <EntityTypeShape EntityType="YASA_PL.Technology_Files" Width="2.75" PointX="5.125" PointY="41.625" />
+        <AssociationConnector Association="YASA_PL.Technology_FilesUser" />
+        <EntityTypeShape EntityType="YASA_PL.Technology_Instruction" Width="2.5" PointX="7.875" PointY="37.375" />
+        <EntityTypeShape EntityType="YASA_PL.Technology_Instruction_Index" Width="2.25" PointX="5.125" PointY="37.375" />
+        <AssociationConnector Association="YASA_PL.Technology_Instruction_IndexTechnology_Instruction" />
+        <AssociationConnector Association="YASA_PL.Technology_Instruction_IndexUser" />
+        <AssociationConnector Association="YASA_PL.Technology_Instruction_IndexUser1" />
+        <AssociationConnector Association="YASA_PL.Technology_Instruction_IndexTechnology_Files" />
+        <AssociationConnector Association="YASA_PL.Technology_InstructionUser" />
+        <AssociationConnector Association="YASA_PL.Quality_InstructionQuality_Instruction_Index" />
+        <EntityTypeShape EntityType="YASA_PL.CNC_Program" Width="2.125" PointX="28.5" PointY="37.25" />
+        <AssociationConnector Association="YASA_PL.CNC_ProgramCNC_Program_Index" />
+        <AssociationConnector Association="YASA_PL.CNC_ProgramUser2" />
+        <EntityTypeShape EntityType="YASA_PL.Technology" Width="2.75" PointX="16" PointY="22.75" />
+        <AssociationConnector Association="YASA_PL.TechnologyUser2" />
+        <AssociationConnector Association="YASA_PL.TechnologyTechnology_Index" />
+        <AssociationConnector Association="YASA_PL.FixtureUser" />
+        <EntityTypeShape EntityType="YASA_PL.CNC_Subprogram" Width="1.875" PointX="32.25" PointY="37.25" />
+        <AssociationConnector Association="YASA_PL.CNC_SubrogramCNC_Subprogram_Index" />
+        <AssociationConnector Association="YASA_PL.CNC_Subprogram_IndexUser" />
+        <AssociationConnector Association="YASA_PL.CNC_SubrogramUser" />
+        <EntityTypeShape EntityType="YASA_PL.Change_Request" Width="1.875" PointX="1.875" PointY="36.25" />
+        <AssociationConnector Association="YASA_PL.Change_RequestUser" />
+        <EntityTypeShape EntityType="YASA_PL.Task" Width="1.75" PointX="27" PointY="4" />
+        <AssociationConnector Association="YASA_PL.TaskUser" />
+        <AssociationConnector Association="YASA_PL.TaskUser1" />
+        <AssociationConnector Association="YASA_PL.TaskNotification" />
+        <EntityTypeShape EntityType="YASA_PL.FormTemplates" Width="2.5" PointX="36.125" PointY="29" />
+        <EntityTypeShape EntityType="YASA_PL.FormType" Width="1.625" PointX="33.5" PointY="29.375" />
+        <AssociationConnector Association="YASA_PL.FormTypeFormTemplates" />
+        <EntityTypeShape EntityType="YASA_PL.FormTemplate_Files" Width="2.625" PointX="39.125" PointY="29" />
+        <AssociationConnector Association="YASA_PL.FormTemplate_FilesFormTemplates" />
+        <EntityTypeShape EntityType="YASA_PL.QualityDocumentation" Width="2.375" PointX="36.125" PointY="25.75" />
+        <EntityTypeShape EntityType="YASA_PL.QualityDocumentationType" Width="2.25" PointX="32.875" PointY="25.75" />
+        <EntityTypeShape EntityType="YASA_PL.QualityDocumentation_Files" Width="2.5" PointX="39.125" PointY="25.75" />
+        <AssociationConnector Association="YASA_PL.QualityDocumentationQualityDocumentationType" />
+        <AssociationConnector Association="YASA_PL.QualityDocumentationQualityDocumentation_Files" />
+        <EntityTypeShape EntityType="YASA_PL.Fixture_Document_File" Width="2.5" PointX="11.25" PointY="5.125" />
+        <EntityTypeShape EntityType="YASA_PL.Fixture_Document_Type" Width="2" PointX="14.375" PointY="5.125" />
+        <AssociationConnector Association="YASA_PL.Fixture_Document_FileFixture_Document_Type" />
+        <AssociationConnector Association="YASA_PL.FixtureContractor_Order" />
+        <AssociationConnector Association="YASA_PL.FixtureContractor" />
+        <EntityTypeShape EntityType="YASA_PL.Tool_Element" Width="2.125" PointX="26.375" PointY="25.875" />
+        <EntityTypeShape EntityType="YASA_PL.Tool" Width="2.25" PointX="30" PointY="25.75" />
+        <EntityTypeShape EntityType="YASA_PL.Tool_Document_File" Width="2.125" PointX="26.375" PointY="30" />
+        <EntityTypeShape EntityType="YASA_PL.Tool_Document_Type" Width="2.25" PointX="23.25" PointY="30" />
+        <AssociationConnector Association="YASA_PL.Tool_Document_TypeTool_Document_File" />
+        <AssociationConnector Association="YASA_PL.Tool_Document_FileTool" />
+        <AssociationConnector Association="YASA_PL.FixtureFixture_Document_File" />
+        <AssociationConnector Association="YASA_PL.Tool_ElementTool_Document_File" />
+        <AssociationConnector Association="YASA_PL.Tool_ElementContractor" />
+        <EntityTypeShape EntityType="YASA_PL.Tool_Type" Width="2" PointX="23.75" PointY="25.875" />
+        <AssociationConnector Association="YASA_PL.Tool_TypeTool_Element" />
+        <AssociationConnector Association="YASA_PL.UserUser" />
+        <AssociationConnector Association="YASA_PL.TaskComment" />
+        <AssociationConnector Association="YASA_PL.NotificationComment" />
+        <EntityTypeShape EntityType="YASA_PL.TaskStatus" Width="1.5" PointX="27.25" PointY="1.375" />
+        <EntityTypeShape EntityType="YASA_PL.NotificationStatus" Width="1.875" PointX="24.375" PointY="1.375" />
+        <AssociationConnector Association="YASA_PL.TaskTaskStatus" />
+        <AssociationConnector Association="YASA_PL.NotificationNotificationStatus" />
+        <EntityTypeShape EntityType="YASA_PL.NotificationType" Width="2.125" PointX="21.25" PointY="1.375" />
+        <AssociationConnector Association="YASA_PL.NotyficationTypeNotification" />
+        <EntityTypeShape EntityType="YASA_PL.DocumentInOut" Width="1.5" PointX="2.125" PointY="40.25" />
+        <AssociationConnector Association="YASA_PL.DocumentInOutUser" />
+        <AssociationConnector Association="YASA_PL.DocumentInOutUser1" />
+        <EntityTypeShape EntityType="YASA_PL.Technology_Dwg_Files" Width="2.25" PointX="11.875" PointY="42.125" />
+        <AssociationConnector Association="YASA_PL.Technology_Dwg_FilesTechnology_Dwg_Index" />
+        <AssociationConnector Association="YASA_PL.Technology_Dwg_FilesUser" />
+        <EntityTypeShape EntityType="YASA_PL.Setup_Sheet_Files" Width="2.5" PointX="17.375" PointY="41.625" />
+        <EntityTypeShape EntityType="YASA_PL.Setup_Sheet" Width="2" PointX="20.25" PointY="37.75" />
+        <EntityTypeShape EntityType="YASA_PL.Setup_Sheet_Index" Width="2.5" PointX="17.375" PointY="37.5" />
+        <AssociationConnector Association="YASA_PL.Setup_Sheet_FilesSetup_Sheet_Index" />
+        <AssociationConnector Association="YASA_PL.Setup_Sheet_FilesUser" />
+        <AssociationConnector Association="YASA_PL.Setup_SheetSetup_Sheet_Index" />
+        <AssociationConnector Association="YASA_PL.Setup_Sheet_IndexUser" />
+        <AssociationConnector Association="YASA_PL.Setup_Sheet_IndexUser1" />
+        <AssociationConnector Association="YASA_PL.Setup_SheetUser" />
+        <AssociationConnector Association="YASA_PL.CNC_ProgramCNC_Machine" />
+        <EntityTypeShape EntityType="YASA_PL.CNC_Program_Files" Width="2.125" PointX="28.5" PointY="45.75" />
+        <AssociationConnector Association="YASA_PL.CNC_SubrogramCNC_Program" />
+        <AssociationConnector Association="YASA_PL.CNC_Program_FilesCNC_Program_Index" />
+        <EntityTypeShape EntityType="YASA_PL.CNC_Subprogram_Files" Width="2.125" PointX="32.125" PointY="45.875" />
+        <AssociationConnector Association="YASA_PL.CNC_Subprogram_FilesCNC_Subprogram_Index" />
+        <EntityTypeShape EntityType="YASA_PL.CNC_Machine_Files" Width="2" PointX="24.875" PointY="42.375" />
+        <AssociationConnector Association="YASA_PL.CNC_Machine_FilesCNC_Machine" />
+        <EntityTypeShape EntityType="YASA_PL.CNC_Machine_Type" Width="1.75" PointX="22.75" PointY="37.25" />
+        <AssociationConnector Association="YASA_PL.CNC_MachineCNC_Machine_Type" />
+        <EntityTypeShape EntityType="YASA_PL.Quality_Instruction_Files" Width="2.125" PointX="42.75" PointY="33.125" />
+        <AssociationConnector Association="YASA_PL.Quality_Instruction_FilesQuality_Instruction_Index" />
+        <AssociationConnector Association="YASA_PL.Quality_Instruction_FilesUser" />
+        <EntityTypeShape EntityType="YASA_PL.Quality_Chart" Width="2.125" PointX="36.5" PointY="38.625" />
+        <EntityTypeShape EntityType="YASA_PL.Quality_Chart_Index" Width="2.5" PointX="39.5" PointY="38.5" />
+        <EntityTypeShape EntityType="YASA_PL.Quality_Chart_Files" Width="2.125" PointX="43.125" PointY="38.5" />
+        <AssociationConnector Association="YASA_PL.Quality_InstructionQuality_Instruction_Index1" />
+        <AssociationConnector Association="YASA_PL.Quality_ChartUser" />
+        <AssociationConnector Association="YASA_PL.Quality_Chart_IndexUser" />
+        <AssociationConnector Association="YASA_PL.Quality_Chart_IndexUser1" />
+        <AssociationConnector Association="YASA_PL.Quality_Chart_FilesUser" />
+        <AssociationConnector Association="YASA_PL.Quality_Chart_FilesQuality_Chart_Index" />
+        <EntityTypeShape EntityType="YASA_PL.Standard" Width="1.875" PointX="48.25" PointY="33.125" />
+        <EntityTypeShape EntityType="YASA_PL.Organization" Width="1.5" PointX="46" PointY="33.125" />
+        <EntityTypeShape EntityType="YASA_PL.Standard_Files" Width="2.5" PointX="50.875" PointY="33.125" />
+        <AssociationConnector Association="YASA_PL.FormTypeFormTemplates1" />
+        <AssociationConnector Association="YASA_PL.Standard_FilesStandard" />
+        <AssociationConnector Association="YASA_PL.CNC_ProgramFixture" />
+        <AssociationConnector Association="YASA_PL.ToolUser" />
+        <AssociationConnector Association="YASA_PL.Tool_ElementUser" />
+        <AssociationConnector Association="YASA_PL.Tool_Document_FileUser" />
+        <AssociationConnector Association="YASA_PL.CNC_Program_IndexUser" />
+        <EntityTypeShape EntityType="YASA_PL.CNC_Status" Width="1.5" PointX="35.375" PointY="43.5" />
+        <AssociationConnector Association="YASA_PL.CNC_StatusCNC_Program_Index" />
+        <AssociationConnector Association="YASA_PL.CNC_Subprogram_IndexCNC_Status" />
+        <AssociationConnector Association="YASA_PL.CNC_Subprogram_IndexUser1" />
+        <AssociationConnector Association="YASA_PL.CNC_Program_FilesUser" />
+        <AssociationConnector Association="YASA_PL.CNC_Subprogram_FilesUser" />
+        <EntityTypeShape EntityType="YASA_PL.CMM_Program" Width="1.875" PointX="3.75" PointY="14.375" />
+        <EntityTypeShape EntityType="YASA_PL.CMM_Program_Index" Width="1.875" PointX="6" PointY="14.375" />
+        <EntityTypeShape EntityType="YASA_PL.CMM_Status" Width="1.5" PointX="6" PointY="12.125" />
+        <EntityTypeShape EntityType="YASA_PL.CMM_Program_Files" Width="1.75" PointX="8.5" PointY="14.375" />
+        <AssociationConnector Association="YASA_PL.CMM_Program_IndexCMM_Program" />
+        <AssociationConnector Association="YASA_PL.CMM_Program_IndexCMM_Status" />
+        <AssociationConnector Association="YASA_PL.CMM_Program_FilesCMM_Program_Index" />
+        <AssociationConnector Association="YASA_PL.CMM_ProgramUser" />
+        <AssociationConnector Association="YASA_PL.CMM_Program_IndexUser" />
+        <AssociationConnector Association="YASA_PL.CMM_Program_IndexUser1" />
+        <AssociationConnector Association="YASA_PL.CMM_Program_FilesUser" />
+        <AssociationConnector Association="YASA_PL.CMM_ProgramFixture" />
+        <AssociationConnector Association="YASA_PL.CMM_ProgramCNC_Machine" />
+        <EntityTypeShape EntityType="YASA_PL.Article_type" Width="1.5" PointX="39.125" PointY="3.375" />
+        <AssociationConnector Association="YASA_PL.Contractor_OrderArticle_type" />
+        <AssociationConnector Association="YASA_PL.ScoreContractor_Order" />
+        <AssociationConnector Association="YASA_PL.TechnologyCustomer_Part_Index" />
+        <EntityTypeShape EntityType="YASA_PL.Production_material" Width="2" PointX="14.25" PointY="19.625" />
+        <AssociationConnector Association="YASA_PL.TechnologyProduction_material" />
+        <AssociationConnector Association="YASA_PL.Production_materialUser" />
+        <AssociationConnector Association="YASA_PL.Production_materialContractor" />
+        <AssociationConnector Association="YASA_PL.Technology_StageTechnology_Index" />
+        <AssociationConnector Association="YASA_PL.Technology_StageTechnology_Instruction" />
+        <AssociationConnector Association="YASA_PL.Technology_StageTechnology_Dwg" />
+        <AssociationConnector Association="YASA_PL.Technology_StageSetup_Sheet" />
+        <AssociationConnector Association="YASA_PL.Technology_StageCNC_Program" />
+        <AssociationConnector Association="YASA_PL.Technology_StageQuality_Instruction" />
+        <AssociationConnector Association="YASA_PL.Technology_StageQuality_Chart" />
+        <AssociationConnector Association="YASA_PL.Technology_StageCMM_Program" />
+        <AssociationConnector Association="YASA_PL.ToolTool_Element" />
+        <EntityTypeShape EntityType="YASA_PL.ToolCNC_Program" Width="1.875" PointX="29.875" PointY="30.5" />
+        <AssociationConnector Association="YASA_PL.ToolCNC_ProgramCNC_Program" />
+        <AssociationConnector Association="YASA_PL.ToolCNC_ProgramTool" />
+        <EntityTypeShape EntityType="YASA_PL.Tool_Assembly_Type" Width="2.25" PointX="32.875" PointY="27.625" />
+        <AssociationConnector Association="YASA_PL.Tool_Assembly_TypeTool" />
+        <EntityTypeShape EntityType="YASA_PL.Tool_Holder_System" Width="1.75" PointX="22.75" PointY="39.25" />
+        <AssociationConnector Association="YASA_PL.Tool_Holder_SystemCNC_Machine" />
+        <AssociationConnector Association="YASA_PL.Tool_Holder_SystemTool" />
+        <AssociationConnector Association="YASA_PL.Setup_SheetCNC_Program" />
+        <AssociationConnector Association="YASA_PL.Setup_SheetCMM_Program" />
+        <EntityTypeShape EntityType="YASA_PL.Order_Status" Width="2.25" PointX="39.625" PointY="10.875" />
+        <AssociationConnector Association="YASA_PL.Order_StatusContractor_Order" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

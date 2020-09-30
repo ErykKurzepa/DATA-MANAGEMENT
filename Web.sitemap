@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="" >
+
+      <siteMapNode url="Default.aspx" title="Start"  description="" >
+       
+      </siteMapNode>
+        
+       
+
+      <siteMapNode url="" title="Dostawcy"  description="" >
+        <siteMapNode url="ContractorSet/List.aspx" title="dane adresowe"  description=""  />
+        <siteMapNode url="Contractor_ContactSet/List.aspx" title="pracownicy"  description="" />
+        <siteMapNode url="Contractor_OrderSet/List.aspx" title="rejestr zamówień"  description="" />
+        <siteMapNode url="ScoreSet/List.aspx" title="oceny"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="" title="Klienci"  description="" >
+        <siteMapNode url="CustomerSet/List.aspx" title="dane adresowe"  description=""  />
+        <siteMapNode url="Customer_ContactSet1/List.aspx" title="pracownicy"  description=""  />
+        <siteMapNode url="Customer_ProductSet/List.aspx" title="produkty"  description=""  />
+        <siteMapNode url="Customer_PartSet/List.aspx" title="detale"  description=""  />
+        <!--<siteMapNode url="Customer_OrderSet1/List.aspx" title="rejestr zamówień"  description=""  />-->
+      </siteMapNode>
+
+      <!--<siteMapNode url="" title="Produkcja"  description="" >
+        <siteMapNode url="Production_OrderSet/List.aspx" title="zlecenia produkcyjne"  description="" />
+      </siteMapNode>-->
+
+      <siteMapNode url="" title="Wdrożenia"  description="" >
+        <siteMapNode url="NotificationSet/List.aspx" title="powiadomienia"  description="" />
+        <siteMapNode url="TaskSet/List.aspx" title="zadania"  description="" />
+      </siteMapNode>
+      
+      <siteMapNode url="" title="Technologie"  description="" >
+       
+        <!--<siteMapNode url="TechnologyAssemblySet/List.aspx" title="technologie montażu"  description="" />-->
+        
+        <siteMapNode url="Technology_InstructionSet/List.aspx" title="instrukcje pracy"  description="" />
+        <siteMapNode url="Technology_DwgSet/List.aspx" title="rysunki technologiczne"  description="" />
+        <siteMapNode url="Setup_SheetSet/List.aspx" title="arkusze ustawcze"  description="" />
+        <siteMapNode url="CNC_ProgramSet/List.aspx" title="programy cnc"  description="" />
+        <siteMapNode url="ToolSet/List.aspx" title="narzędzia"  description="" />
+        <siteMapNode url="FixtureSet/List.aspx" title="przyrządy"  description="" />
+        <siteMapNode url="CNC_MachineSet/List.aspx" title="maszyny"  description="" />
+        <siteMapNode url="Kalkulatory.aspx" title="kalkulatory"  description="" />   
+      </siteMapNode>
+
+      <siteMapNode url="" title="Produkcja"  description="" >
+        <siteMapNode url="TechnologySet/List.aspx" title="technologie produkcji"  description="" />
+        <siteMapNode url="ProductionSet/List.aspx" title="zlecenia produkcji"  description="" />
+      </siteMapNode>
+      
+      <siteMapNode url="" title="Kontrola Jakości"  description="" >
+        <siteMapNode url="Quality_InstructionSet/List.aspx" title="instrukcje kontroli"  description="" />
+        <siteMapNode url="Quality_ChartSet/List.aspx" title="karty kontroli"  description="" />
+        <siteMapNode url="CMM_ProgramSet/List.aspx" title="programy cmm"  description="" />
+        <siteMapNode url="StandardSet/List.aspx" title="normy"  description="" />
+        <siteMapNode url="QualityDocumentationSet/List.aspx?QualityDocumentationTypeId=1" title="księga jakości"  description="" />
+        <siteMapNode url="QualityDocumentationSet/List.aspx?QualityDocumentationTypeId=2" title="procedury systemowe"  description="" />
+        <siteMapNode url="QualityDocumentationSet/List.aspx?QualityDocumentationTypeId=3" title="procesy"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="" title="Magazyn"  description="" >
+        <siteMapNode url="Production_materialSet/List.aspx" title="materiały produkcyjne"  description="" />
+      </siteMapNode>
+      
+      <siteMapNode url="" title="Użytkownicy"  description="">
+        <siteMapNode url="DetailsMojeDane.aspx" title="moje dane"  description=""/>
+        <siteMapNode url="MojeZadania.aspx" title="moje zadania"  description="" />
+        <siteMapNode url="Users/List.aspx" title="wszyscy użytkownicy"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="" title="Formularze"  description="" >
+        <siteMapNode url="FormTemplatesSet/List.aspx?FormTypeId=1" title="dokumenty technologiczne"  description="" />
+        <siteMapNode url="FormTemplatesSet/List.aspx?FormTypeId=2" title="dokumenty jakościowe"  description=""  />
+        <siteMapNode url="FormTemplatesSet/List.aspx?FormTypeId=3" title="dokumenty kadrowe"  description=""  />
+        <siteMapNode url="FormTemplatesSet/List.aspx?FormTypeId=4" title="dokumenty handlowe"  description=""  />
+        <siteMapNode url="FormTemplatesSet/List.aspx?FormTypeId=5" title="dokumenty magazynowe"  description="" />
+      </siteMapNode>
+
+      <siteMapNode url="" title="Pomoc"  description="" >
+        <siteMapNode url="Kontaktadministrator.aspx" title="kontakt z administratorem systemu"  description=""/>
+        <siteMapNode url="Instrukcjaobslugi.aspx" title="instrukcja obsługi systemu"  description="" />
+        <siteMapNode url="Propozycjezmian.aspx" title="propozycje zmian w systemie"  description="" />
+        <siteMapNode url="Osystemie.aspx" title="o systemie"  description=""/>
+      </siteMapNode>
+      
+    </siteMapNode>
+</siteMap>
